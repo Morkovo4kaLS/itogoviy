@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintSocks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="nav">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo" class="logoImg">
+            </a>
+            <ul class="navbar">
+                <li class="navItem">
+                    <a href="#" id="myBtn">Корзина</a>
+                </li> 
+                <li class="navItem">
+                    <div class="dropdown">
+                        <button class="dropbtn">Войти</button>
+                            <div class="dropdown-content">
+                              <p class="text">Регистрация</p>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="header">Корзина</div>
+            <div class="wrap" id="modalWrap">
+            
+            </div>        
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="mainInfo">
+            <div class="left">
+                <div class="header">Носочки для всех случаев жизни - PrintSocks.</div>
+                <p class="text">Мы предлагаем удобные, стильные и качественные носочки на любой вкус и цвет. Быстрая доставка и высокое качество продукции. Приятных покупок в PrintSocks!</p>
+            </div>
+            <div class="right">
+                <img src="img/Ar33qfR2WPg.jpg" alt="mainImg" class="mainImg">
+            </div>
+        </div>
+
+        <div class="productsList">
+            <div class="header">Доступные товары</div>
+            <div class="products">
+                <a href="product.html" class="productItem">
+                    <img src="img/1.jpg" alt="mainImg" class="productItem__img">
+                    <div class="productItem__main">
+                        <div class="mainName">Носочки с болтиками</div>
+                        <div class="mainDopInfo">возможен выбор цвета</div>
+                        <div class="mainBottom">
+                            <div class="cost">₽300</div>
+                            <button type="submit" class="btn">Подробнее</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="product2.html" class="productItem">
+                    <img src="img/11.jpg" alt="mainImg" class="productItem__img">
+                    <div class="productItem__main">
+                        <div class="mainName">Носочки с жабками</div>
+                        <div class="mainDopInfo">возможен выбор цвета</div>
+                        <div class="mainBottom">
+                            <div class="cost">₽500</div>
+                            <button type="submit" class="btn">Подробнее</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

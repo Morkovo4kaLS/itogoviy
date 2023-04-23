@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Носочки</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="container">
+        <div class="nav">
+            <ul class="navbar">
+                <li class="navItem">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logoImg">
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="#" id="myBtn">Корзина</a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="header">Корзина</div>
+            <div class="wrap" id="modalWrap">
+
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="productInfo">
+            <div class="productInfo__img" id="imgId">
+                <img src="img/11.jpg" id="3">
+            </div>
+            <div class="productInfo__info">
+                <div>
+                    <div class="productInfo__info-header">Носочки с жабками</div>
+                    <div class="productInfo__info-category">
+                        <div class="name">Выбор цвета</div>
+                        <div class="productInfo__info-choose">
+                            <div class="color" style="background-color: #a3c9ff;" onclick="choose(3)"></div>
+                            <div class="color" style="background-color: #acca8c;" onclick="choose(4)"></div>
+                            <div class="color" style="background-color: #ffcf90;" onclick="choose(5)"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productInfo__info-category">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div class="productInfo__info-category-cost">₽500</div>
+                        <div type="submit" class="btn" onclick="addToCart()">Добавить в корзину</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
